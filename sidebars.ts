@@ -41,7 +41,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: "category",
-      label: "compatibility",
+      label: "Compatibility",
       items: [
         "compatibility/general",
         "compatibility/rendering",

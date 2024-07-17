@@ -1,6 +1,8 @@
 import React from 'react';
 import './Badge.css';
 
+import LoveLogoUrl from '@site/static/images/love-app-icon.svg';
+
 interface VersionIndicatorProps {
   version: string;
 }
@@ -8,7 +10,7 @@ interface VersionIndicatorProps {
 const Badge: React.FC<VersionIndicatorProps> = ({ version }) => {
   return (
     <div className="version-indicator">
-      <img src="/images/love-app-icon.svg" alt="LÖVE Icon" className="love-icon" />
+      <img src={LoveLogoUrl} alt="LÖVE Icon" className="love-icon" />
       <span className="version-text">LÖVE {version}</span>
     </div>
   );
