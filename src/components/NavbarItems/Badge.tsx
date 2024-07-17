@@ -10,7 +10,7 @@ interface VersionIndicatorProps {
 const Badge: React.FC<VersionIndicatorProps> = ({ version }) => {
   return (
     <div className="version-indicator">
-      <img src={LoveLogoUrl} alt="LÖVE Icon" className="love-icon" />
+      <LoveLogoUrl className="love-icon" />
       <span className="version-text">LÖVE {version}</span>
     </div>
   );
