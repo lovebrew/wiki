@@ -10,7 +10,7 @@ const Showcase: Array<ShowcaseItem> = [
   {
     title: "Taśman Quest",
     author: "Nawias",
-    description: "Jest to gra polegająca na zrujnowaniu lokalnego sklepu spożywczego i zaklejeniu jak największej ilości jego rzeczy w określonym czasie.",
+    description: "Join Taśman in his quest to wrap everything in TAŚMAN Sealed duct tape! In this short, arcade-y game for your Nintendo 3DS explore the famous Lewiatan grocery store of Księżomierz and flex your tape-wrapping skills as the clock is ticking!",
     preview: require("/showcase/tasmanquest.png"),
     source: "https://nawias.itch.io/tasmanquest"
   }
