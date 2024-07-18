@@ -9,17 +9,17 @@
   font-size: .675em;
   padding: 0 1em;
   color: white;
-  text-shadow: 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.5);
+  /* text-shadow: 0 0.15rem 0rem rgba(0, 0, 0, 0.85); */
   font-weight: 500;
   border: 1px solid var(--ifm-color-primary);
 }
 
 .showcaseConsoleTagButton {
-  color: var(--ifm-color-content) !important;
+  color: var(--ifm-font-color-base);
 }
 
 .showcaseConsoleTagButton:hover {
-  color: var(--ifm-color-content);
+  color: var(--ifm-font-color-base);
 }
 
 @media screen and (min-width: 600px) {
@@ -38,14 +38,17 @@
 
 .showcaseConsoleTag3DS.active {
   background-color: var(--showcaseConsoleTag3DS);
+  color: white;
 }
 
 .showcaseConsoleTagSwitch.active {
   background-color: var(--showcaseConsoleTagSwitch);
+  color: white;
 }
 
 .showcaseConsoleTagWiiU.active {
   background-color: var(--showcaseConsoleTagWiiU);
+  color: white;
 }
 
 .active {
