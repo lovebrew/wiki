@@ -4,6 +4,8 @@ import clsx from 'clsx';
 import Image from '@theme/IdealImage';
 
 import { ShowcaseItem } from '@site/src/data/showcase';
+import ShowcaseCardIcons from '@site/src/components/ShowcaseCardIcons';
+
 import styles from "./styles.module.css";
 
 const usePicsumImage = (seed?: string, size?: number) => {
@@ -32,10 +34,13 @@ function ShowcaseCard({ item }: { item: ShowcaseItem }) {
       <div className="card__body">
         <div className={styles.showcaseCardHeader}>
           <h4 className={styles.showcaseCardTitle}>
-            <a href={item.source}>{item.title}</a>
+            <a className={styles.showcaseCardLink} href={item.source}>{item.title}</a>
           </h4>
           <p className={styles.showcaseCardAuthor}>{item.author}</p>
         </div>
+      </div>
+      <div className={clsx('card__footer', styles.showcaseCardFooter)}>
+        <ShowcaseCardIcons consoles={item.consoles} />
       </div>
     </li>
   );

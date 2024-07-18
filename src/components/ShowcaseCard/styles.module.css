@@ -1,5 +1,10 @@
+:root {
+  --showcaseCardTransition: 0.5s ease;
+  --showcaseCardBlur: blur(4px) brightness(0.5);
+}
+
 .showcaseCard {
-  transition: transform 0.5s ease;
+  transition: transform var(--showcaseCardTransition);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -7,6 +12,14 @@
   cursor: default;
   transform: scale(1.05);
 }
+
+@media only screen and (max-width: 600px) {
+  .showcaseCard:hover {
+    cursor: default;
+    transform: unset;
+  }
+}
+
 
 .showcaseCardPreview {
   overflow: hidden;
@@ -21,12 +34,9 @@
   border-bottom: 2px solid var(--ifm-color-emphasis-200);
   object-fit: fill;
   border-radius: 4px 4px 0 0;
-  transition: filter 0.5s ease;
+  transition: filter var(--showcaseCardTransition);
 }
 
-.showcaseCard:hover .showcaseCardImage {
-  filter: blur(4px) brightness(0.5);
-}
 
 .showcaseCardDescription {
   margin: 0;
@@ -38,10 +48,30 @@
   opacity: 0;
   transition: opacity 0.5s ease;
   text-align: center;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-shadow: black 1px 0px 10px;
+  font-size: 1em;
 }
 
-.showcaseCard:hover .showcaseCardDescription {
+.showcaseCardPreview:hover .showcaseCardImage {
+  filter: var(--showcaseCardBlur);
+}
+
+.showcaseCardPreview:hover .showcaseCardDescription {
   opacity: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  .showcaseCard:hover .showcaseCardImage {
+    filter: var(--showcaseCardBlur);
+  }
+
+  .showcaseCard:hover .showcaseCardDescription {
+    opacity: 1;
+  }
 }
 
 .showcaseCardHeader {
@@ -63,13 +93,13 @@
   font-style: italic;
 }
 
-.showcaseCardTitle a {
+.showcaseCardLink {
   text-decoration: none;
   background: linear-gradient(var(--ifm-color-primary), var(--ifm-color-primary)) 0% 100% / 0% 1px no-repeat;
   transition: background-size ease-out 200ms;
 }
 
-.showcaseCardTitle a:not(:focus):hover {
+.showcaseCardTitle .showcaseCardLink:not(:focus):hover {
   background-size: 100% 1px;
 }
 
@@ -80,4 +110,10 @@
   color: initial;
   margin-right: 0.25rem;
   margin-bottom: 0;
+}
+
+.showcaseCardFooter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25em;
 }
