@@ -24,28 +24,28 @@
 
 @media screen and (min-width: 600px) {
   .showcaseConsoleTagButton:hover.showcaseConsoleTag3DS {
-    border-color: var(--showcaseConsoleTag3DS)
+    border-color: var(--showcaseConsoleTag3DS);
   }
 
   .showcaseConsoleTagButton:hover.showcaseConsoleTagSwitch {
-    border-color: var(--showcaseConsoleTagSwitch)
+    border-color: var(--showcaseConsoleTagSwitch);
   }
 
   .showcaseConsoleTagButton:hover.showcaseConsoleTagWiiU {
-    border-color: var(--showcaseConsoleTagWiiU)
+    border-color: var(--showcaseConsoleTagWiiU);
   }
 }
 
 .showcaseConsoleTag3DS.active {
-  background-color: var(--showcaseConsoleTag3DS)
+  background-color: var(--showcaseConsoleTag3DS);
 }
 
 .showcaseConsoleTagSwitch.active {
-  background-color: var(--showcaseConsoleTagSwitch)
+  background-color: var(--showcaseConsoleTagSwitch);
 }
 
 .showcaseConsoleTagWiiU.active {
-  background-color: var(--showcaseConsoleTagWiiU)
+  background-color: var(--showcaseConsoleTagWiiU);
 }
 
 .active {
