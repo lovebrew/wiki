@@ -62,7 +62,7 @@ export default function Showcase(): JSX.Element {
         <div className={styles.showcaseFilterHeaderContainer}>
           <p className={styles.showcaseFilterResults}>
             <h2 className={styles.showcaseFilterHeader}>Filters:</h2>
-            {filters.length === 0 ? sortedShowcase.length : filteredShowcase.length} {gamesResultsText}
+            {filters.length === 0 ? sortedShowcase.length : filteredShowcase.length} {text}
           </p>
         </div>
         <div className={clsx(styles.showcaseFitlerContainer, "margin-bottom--lg")}>
