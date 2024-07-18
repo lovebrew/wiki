@@ -47,10 +47,6 @@ const config: Config = {
       indexName: 'lovebrew',
       contextualSearch: true,
       // externalUrlRegex: 'external\\.com|domain\\.com',
-      replaceSearchResultPathname: {
-        from: '/docs/', // or as RegExp: /\/docs\//
-        to: '/',
-      },
       searchParameters: {},
       searchPagePath: false,
       insights: false
