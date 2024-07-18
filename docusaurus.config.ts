@@ -41,6 +41,20 @@ const config: Config = {
   plugins: [["@docusaurus/plugin-ideal-image", { disableInDev: false }]],
 
   themeConfig: {
+      algolia: {
+      appId: 'V4GA8BFAID',
+      apiKey: '5ce83a2ff4fdaaf23211d7e590d52992',
+      indexName: 'lovebrew',
+      contextualSearch: true,
+      // externalUrlRegex: 'external\\.com|domain\\.com',
+      replaceSearchResultPathname: {
+        from: '/docs/', // or as RegExp: /\/docs\//
+        to: '/',
+      },
+      searchParameters: {},
+      searchPagePath: false,
+      insights: false
+    },
     navbar: {
       title: "LÖVE Potion",
       logo: {
