@@ -9,11 +9,11 @@ import Translate from "@docusaurus/Translate";
 function CardList({ items }: { items: ShowcaseItem[] }) {
   return (
     <div className="container">
-      <ul className={clsx("clean-list", styles.cardList)}>
+      <div className={clsx("clean-list", styles.cardList)}>
         {items.map((item) => (
           <ShowcaseCard key={item.title} item={item} />
         ))}
-      </ul>
+      </div>
     </div>
   )
 }

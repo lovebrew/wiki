@@ -13,9 +13,9 @@ const TagMap = {
 
 function ShowcaseCardIcon({ item }: { item: Console }) {
   return (
-    <li className={clsx("clean-list", styles.showcaseConsoleTag, TagMap[item], styles.active)}>
+    <div className={clsx(styles.showcaseConsoleTag, TagMap[item], styles.active)}>
       {item}
-    </li>
+    </div>
   );
 }
 
@@ -23,7 +23,7 @@ export function ShowcaseCardFilterIcon({ item, onClick, active }: { item: Consol
   const isActive = active ? styles.active : "";
 
   return (
-    <button className={clsx("button clean-list", styles.showcaseConsoleTag, TagMap[item], isActive, styles.showcaseConsoleTagButton)} onClick={() => onClick(item)}>
+    <button className={clsx("button", styles.showcaseConsoleTag, TagMap[item], isActive, styles.showcaseConsoleTagButton)} onClick={() => onClick(item)}>
       {item}
     </button>
   );

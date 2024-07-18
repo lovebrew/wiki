@@ -15,7 +15,7 @@
 }
 
 .showcaseConsoleTagButton {
-  color: var(--ifm-color-content);
+  color: var(--ifm-color-content) !important;
 }
 
 .showcaseConsoleTagButton:hover {

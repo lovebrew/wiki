@@ -60,10 +60,11 @@ export default function Showcase(): JSX.Element {
       <main className="margin-vert--lg">
         <ShowcaseHeader />
         <div className={styles.showcaseFilterHeaderContainer}>
-          <p className={styles.showcaseFilterResults}>
-            <h2 className={styles.showcaseFilterHeader}>Filters:</h2>
-            {filters.length === 0 ? sortedShowcase.length : filteredShowcase.length} {text}
-          </p>
+          <h2 className={styles.showcaseFilterHeader}>Filters:
+            <p className={styles.showcaseFilterResults}>
+              {filters.length === 0 ? sortedShowcase.length : filteredShowcase.length} {text}
+            </p>
+          </h2>
         </div>
         <div className={clsx(styles.showcaseFitlerContainer, "margin-bottom--lg")}>
           {ShowcaseCardFilters.map((filter) => (

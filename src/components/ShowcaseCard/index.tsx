@@ -24,7 +24,7 @@ function getCardImage(user: ShowcaseItem): string {
 
 function ShowcaseCard({ item }: { item: ShowcaseItem }) {
   return (
-    <li key={item.title} className={clsx("card", styles.showcaseCard)}>
+    <div className={clsx("card", styles.showcaseCard)}>
       <div className={styles.showcaseCardPreview}>
         <div className={styles.showcaseCardImage}>
           <Image img={getCardImage(item)} alt={item.title} />
@@ -42,7 +42,7 @@ function ShowcaseCard({ item }: { item: ShowcaseItem }) {
       <div className={clsx('card__footer', styles.showcaseCardFooter)}>
         <ShowcaseCardIcons consoles={item.consoles} />
       </div>
-    </li>
+    </div>
   );
 }
 
