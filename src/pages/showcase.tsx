@@ -15,7 +15,7 @@ const TITLE = translate({ id: "theme.showcase.Title", message: "Projects Showcas
 const DESCRIPTION = translate({ id: "theme.showcase.Description", message: "List of projects using LÖVE Potion" });
 const ADD_PROJECT = translate({ id: "theme.showcase.SubmitProject", message: "Submit Your Project!" });
 
-const BUTTON_TO = "https://github.com/lovebrew/lovebrew.github.io/discussions/categories/show-and-tell";
+const BUTTON_TO = "https://github.com/lovebrew/lovebrew.github.io/discussions/10";
 
 function ShowcaseHeader(): JSX.Element {
   return (
@@ -25,7 +25,6 @@ function ShowcaseHeader(): JSX.Element {
         {ADD_PROJECT}
       </Link>
     </section>
-
   );
 }
 
