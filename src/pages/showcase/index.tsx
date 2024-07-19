@@ -4,11 +4,11 @@ import Link from "@docusaurus/Link";
 import { translate } from "@docusaurus/Translate";
 import clsx from "clsx";
 
-import ShowcaseCards from "./components/ShowcaseCards";
+import ShowcaseCards from "./_components/ShowcaseCards";
 import { Console, ShowcaseCardFilters, sortedShowcase } from "../../data/showcase";
 
 import styles from "./styles.module.css";
-import ShowcaseFilterButton from "./components/ShowcaseFilterButton";
+import ShowcaseFilterButton from "./_components/ShowcaseFilterButton";
 import { useState } from "react";
 
 const TITLE = translate({ id: "theme.showcase.Title", message: "Projects Showcase" });

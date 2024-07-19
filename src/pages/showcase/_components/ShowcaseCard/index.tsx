@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import Image from '@theme/IdealImage';
 
 import { ShowcaseItem } from '@site/src/data/showcase';
-import ShowcaseCardConsoleTags from '@site/src/pages/showcase/components/ShowcaseCardConsoleTags';
+import ShowcaseCardConsoleTags from '@site/src/pages/showcase/_components/ShowcaseCardConsoleTags';
 
 import styles from "./styles.module.css";
 
