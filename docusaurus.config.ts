@@ -43,7 +43,7 @@ const config: Config = {
   themeConfig: {
       algolia: {
       appId: 'V4GA8BFAID',
-      apiKey: '5ce83a2ff4fdaaf23211d7e590d52992',
+      apiKey: 'b69b81a4fcaa91ed94022b5faa467f2e',
       indexName: 'lovebrew',
       contextualSearch: true,
       // externalUrlRegex: 'external\\.com|domain\\.com',
