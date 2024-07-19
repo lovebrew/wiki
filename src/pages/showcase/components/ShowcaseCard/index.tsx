@@ -1,10 +1,10 @@
-// File: src/components/ShowcaseCard.js
 import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
+// @ts-ignore -- this exists
 import Image from '@theme/IdealImage';
 
 import { ShowcaseItem } from '@site/src/data/showcase';
-import ShowcaseCardIcons from '@site/src/components/ShowcaseCardIcons';
+import ShowcaseCardConsoleTags from '@site/src/pages/showcase/components/ShowcaseCardConsoleTags';
 
 import styles from "./styles.module.css";
 
@@ -40,7 +40,7 @@ function ShowcaseCard({ item }: { item: ShowcaseItem }) {
         </div>
       </div>
       <div className={clsx('card__footer', styles.showcaseCardFooter)}>
-        <ShowcaseCardIcons consoles={item.consoles} />
+        <ShowcaseCardConsoleTags consoles={item.consoles} />
       </div>
     </div>
   );
