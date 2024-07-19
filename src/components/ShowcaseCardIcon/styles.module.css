@@ -9,13 +9,12 @@
   font-size: .675em;
   padding: 0 1em;
   color: white;
-  /* text-shadow: 0 0.15rem 0rem rgba(0, 0, 0, 0.85); */
   font-weight: 500;
   border: 1px solid var(--ifm-color-primary);
 }
 
 .showcaseConsoleTagButton {
-  color: var(--ifm-font-color-base);
+  color: var(--ifm-font-color-base) !important;
 }
 
 .showcaseConsoleTagButton:hover {
